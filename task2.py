@@ -18,6 +18,7 @@ def convert_string(input_str):
 
     return result + f"{prev_symbol}{len_of_series}" if prev_symbol else ""
 
+
 input_str = ""
 print(input_str + " -> " + convert_string(input_str))
 

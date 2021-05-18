@@ -10,6 +10,7 @@ def get_one_length(lst):
             one_length = 0
     return lengths
 
+
 def calc_max_one_length(lst):
     one_lengths = get_one_length(lst)
     if len(one_lengths) == 1:
@@ -22,6 +23,7 @@ def calc_max_one_length(lst):
                 max_length = one_lengths[i] + one_lengths[i+1]
             i += 1
         return max_length
+
 
 lst = [0, 1, 0]
 print(str(lst) + " -> " + str(calc_max_one_length(lst)))

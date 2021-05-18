@@ -5,6 +5,7 @@ def group_str(start, end, last):
         result += ", "
     return result
 
+
 def colapse1(lst):
     result = ""
     max_number = max(lst)
@@ -21,6 +22,7 @@ def colapse1(lst):
     if group_start:
         result += group_str(group_start, max_number, True)
     return result
+
 
 def colapse2(lst):
     result = ""
@@ -39,26 +41,26 @@ def colapse2(lst):
     return result
 
 
-lst = [1,4,5,2,3,9,8,11,0]
+lst = [1, 4, 5, 2, 3, 9, 8, 11, 0]
 print(f"1: {lst} -> {colapse1(lst)}")
 
-lst = [1,4,5,2,3,9,11,0]
+lst = [1, 4, 5, 2, 3, 9, 11, 0]
 print(f"1: {lst} -> {colapse1(lst)}")
 
-lst = [1,4,3,2]
+lst = [1, 4, 3, 2]
 print(f"1: {lst} -> {colapse1(lst)}")
 
-lst = [1,4]
+lst = [1, 4]
 print(f"1: {lst} -> {colapse1(lst)}")
 
-lst = [1,4,5,2,3,9,8,11,0]
+lst = [1, 4, 5, 2, 3, 9, 8, 11, 0]
 print(f"2: {lst} -> {colapse2(lst)}")
 
-lst = [1,4,5,2,3,9,11,0]
+lst = [1, 4, 5, 2, 3, 9, 11, 0]
 print(f"2: {lst} -> {colapse2(lst)}")
 
-lst = [1,4,3,2]
+lst = [1, 4, 3, 2]
 print(f"2: {lst} -> {colapse2(lst)}")
 
-lst = [1,4]
+lst = [1, 4]
 print(f"2: {lst} -> {colapse2(lst)}")
